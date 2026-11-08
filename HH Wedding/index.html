@@ -1,0 +1,2852 @@
+
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Humaira & Haziq | Wedding Invitation</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600&family=Cormorant+Garamond:wght@500;600;700&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+/* =================================
+   GLOBAL
+================================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #F4E8D2;
+  color: #665442;
+  font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden;
+}
+
+:root {
+  --gold: #A58665;
+  --gold-dark: #806044;
+  --ivory: #F8F5EF;
+  --white: #FFFFFF;
+}
+
+/* =================================
+   OPENING
+================================= */
+
+.cover {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100vh;
+  height: 100svh;
+  z-index: 1000;
+  background: var(--ivory);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition: opacity 0.9s ease, visibility 0.9s ease;
+}
+
+.cover.hide {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.cover-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  pointer-events: none;
+}
+
+.cover {
+    position: relative;
+}
+
+.open-button {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    background: #65081F;
+    color: #FFFFFF;
+
+    border: 3px solid #C5A66D 
+	border-radius: 50px;
+
+    padding: 11px 25px;
+    min-width: 175px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    white-space: nowrap;
+
+    box-shadow: 0 4px 10px rgba(40, 0, 10, 0.28);
+
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.open-button:hover {
+    background: #7A102D;
+    transform: translateX(-50%);
+}
+
+.open-button:active {
+    transform: translateX(-50%);
+    box-shadow: 0 2px 5px rgba(40, 0, 10, 0.25);
+}
+
+@keyframes pulse {
+  0%, 100% {
+    box-shadow: 0 0 0 0 #A5866540;
+  }
+  50% {
+    box-shadow: 0 0 0 12px #A5866500;
+  }
+}
+
+/* =================================
+   MAIN CANVA BACKGROUNDS
+================================= */
+
+#mainContent {
+  display: none;
+  padding-bottom: 0;
+}
+
+.canva-page {
+  position: relative;
+  width: 100%;
+  display: block;
+  line-height: 0;
+  background: var(--ivory);
+}
+
+.canva-page img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* =================================
+   COUNTDOWN
+================================= */
+
+
+/* =================================
+   COUNTDOWN - LUXURY BURGUNDY
+================================= */
+
+
+/* =====================================
+   COUNTDOWN - LUXURY WEDDING DESIGN
+===================================== */
+
+.countdown-section {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+
+    background: var(--ivory);
+    text-align: center;
+
+    padding: 18px 12px 22px;
+    border-radius: 22px;
+}
+
+/* TITLE */
+.countdown-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 27px;
+    font-weight: 600;
+    letter-spacing: 5px;
+    color: #65081F;
+
+    margin: 0 0 16px;
+    text-transform: uppercase;
+}
+
+/* COUNTDOWN CONTAINER */
+.countdown {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+
+    justify-content: center;
+    align-items: stretch;
+    gap: 8px;
+}
+
+/* COUNTDOWN BOX */
+.count-box {
+    width: 100%;
+    min-width: 0;
+    height: 86px;
+    box-sizing: border-box;
+
+    padding: 8px 3px;
+
+    background: linear-gradient(
+        145deg,
+        #87384D 0%,
+        #65081F 65%,
+        #4B091A 100%
+    );
+
+    border: 1.5px solid #C5A66D;
+    border-radius: 15px;
+
+    box-shadow:
+        0 4px 9px rgba(50, 0, 15, 0.16);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+}
+
+/* NUMBER - CHAMPAGNE GOLD */
+.count-box strong {
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: 39px;
+    font-weight: 700;
+    line-height: 1;
+
+    background: linear-gradient(
+        180deg,
+        #FFF9E8 0%,
+        #F5E2B4 30%,
+        #D8B76E 65%,
+        #FFF3D0 100%
+    );
+
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #F5E2B4;
+}
+
+/* LABEL */
+.count-box span {
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 1px;
+
+    color: #FFF8EA;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+/* SMALL PHONES */
+@media (max-width: 360px) {
+    .countdown-section {
+        padding: 15px 9px 18px;
+    }
+
+    .countdown {
+        gap: 6px;
+    }
+
+    .count-box {
+        height: 80px;
+        border-radius: 12px;
+    }
+
+    .count-box strong {
+        font-size: 34px;
+    }
+
+    .count-box span {
+        font-size: 9px;
+    }
+}
+
+
+/* =================================
+   FIXED BOTTOM NAVIGATION
+================================= */
+
+.bottom-nav {
+    position: fixed;
+    z-index: 500;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+
+    height: 48px;
+	height: auto;
+    padding: 4px 5px calc(4px + env(safe-area-inset-bottom));
+
+    background: linear-gradient(
+        140deg,
+        #f8e49a,
+        #f1e7aa,
+        #fff2c4
+    );
+
+    border-top: 2px solid #D4AF72;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    box-shadow:
+        0 -3px 12px rgba(40, 0, 10, 0.12),
+
+}
+
+.nav-button {
+  flex: 1;
+  border: none;
+  background: transparent;
+  color: #65081F;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0px;
+  height: 45px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  border-radius: 10px;
+}
+
+.nav-button:hover,
+.nav-button:focus-visible {
+  background: rgba(212, 175, 114, 0.25);
+}
+
+.nav-icon img {
+  width: 42px;
+  height; 42px;
+  transform: translateY(-10%);
+  object-fit: contain;
+  display: block;
+}
+
+.nav-label {
+  color: #65081F;
+  font-size: 9px;
+  letter-spacing: 0.8px;
+  font-weight: 600;
+}
+
+/* =================================
+   FLOATING MUSIC BUTTON
+================================= */
+
+.music-button {
+    position: fixed;
+    z-index: 600;
+
+    right: 12px;
+    bottom: calc(98px + env(safe-area-inset-bottom));
+
+    width: 50px;
+    height: 50px;
+
+    border-radius: 50%;
+
+    background: linear-gradient(
+        145deg,
+        #FFF8EE,
+        #E8CFA9,
+        #fff2c4
+    );
+
+    border: none;
+
+    color: #65081F;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0;
+    cursor: pointer;
+
+    box-shadow:
+        0 5px 12px rgba(40, 0, 10, 0.28),
+        0 2px 5px rgba(212, 175, 114, 0.4),
+        inset 0 1px 3px rgba(255, 255, 255, 0.7);
+}
+
+.music-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+.music-button img {
+    position: absolute;
+
+    width: 90px;
+    height: 90px;
+
+    top: 32%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    object-fit: contain;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+  background: var(--gold-dark);
+ 
+}
+
+.music-button.playing {
+  animation: musicPulse 2s infinite;
+}
+
+@keyframes musicPulse {
+  50% {
+    box-shadow: 0 0 0 8px #A5866520;
+  }
+}
+
+/* =================================
+   RESPONSIVE
+================================= */
+
+@media (max-width: 380px) {
+
+  .nav-label {
+    font-size: 8px;
+    letter-spacing: 0;
+  }
+
+  .nav-icon {
+    font-size: 20px;
+  }
+
+  .count-box {
+    width: 60px;
+  }
+
+}.bottom-nav,
+.music-button {
+  display: none;
+}
+
+body.interface-active .bottom-nav,
+body.interface-active .music-button {
+  display: flex;
+}
+
+/* FIX OPEN INVITATION BUTTON */
+
+.cover {
+    position: relative;
+    isolation: isolate;
+}
+
+.cover-image {
+    pointer-events: none;
+}
+
+.open-button {
+    position: absolute;
+    z-index: 20;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    pointer-events: auto;
+    cursor: pointer;
+    touch-action: manipulation;
+}
+
+
+/* CONTACT POPUP */
+.contact-popup {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    background: rgba(25, 20, 20, 0.65);
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.contact-popup.active {
+    display: flex;
+}
+
+.contact-card {
+    position: relative;
+    background: #F5F0E7;
+    width: 100%;
+    max-width: 420px;
+    padding: 45px 28px;
+    border: 1px solid #A58665;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+}
+
+.contact-card h2 {
+    color: #70434B;
+    font-size: 27px;
+    letter-spacing: 4px;
+    margin-bottom: 8px;
+}
+
+.contact-subtitle {
+    color: #8B7770;
+    margin-bottom: 30px;
+}
+
+.contact-person {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 17px 0;
+    border-bottom: 1px solid #D8C9B7;
+}
+
+.contact-person span {
+    color: #70434B;
+    font-size: 17px;
+}
+
+.contact-person a {
+    color: #8B6B43;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.contact-close {
+    position: absolute;
+    top: 12px;
+    right: 16px;
+    background: none;
+    border: none;
+    color: #70434B;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+
+/* WISH POPUP */
+.wish-popup {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: rgba(25, 20, 20, 0.65);
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.wish-popup.active {
+  display: flex;
+}
+
+.wish-card {
+  position: relative;
+  background: #F5F0E7;
+  width: 100%;
+  max-width: 420px;
+  max-height: 85vh;
+  overflow-y: auto;
+  padding: 42px 25px;
+  border: 1px solid #A58665;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+}
+
+.wish-card h2 {
+  color: #70434B;
+  font-size: 23px;
+  letter-spacing: 3px;
+  margin-bottom: 8px;
+}
+
+.wish-subtitle {
+  color: #8B7770;
+  margin-bottom: 25px;
+}
+
+.wish-card input,
+.wish-card textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 13px;
+  margin-bottom: 14px;
+  border: 1px solid #D8C9B7;
+  border-radius: 7px;
+  background: #FFFCF7;
+  color: #70434B;
+  font-family: inherit;
+  font-size: 14px;
+  outline: none;
+}
+
+.wish-card textarea {
+  resize: vertical;
+}
+
+.wish-submit {
+  width: 100%;
+  padding: 13px;
+  border: none;
+  border-radius: 7px;
+  background: #806044;
+  color: white;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+.wish-close {
+  position: absolute;
+  top: 10px;
+  right: 16px;
+  background: none;
+  border: none;
+  color: #70434B;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+
+/* CALENDAR POPUP */
+.calendar-popup {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: rgba(25, 20, 20, 0.65);
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.calendar-popup.active {
+  display: flex;
+}
+
+.calendar-card {
+  position: relative;
+  background: #F5F0E7;
+  width: 100%;
+  max-width: 380px;
+  padding: 45px 25px;
+  border: 1px solid #A58665;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+}
+
+.calendar-subtitle {
+  color: #A58665;
+  font-size: 12px;
+  letter-spacing: 4px;
+  margin-bottom: 10px;
+}
+
+.calendar-card h2 {
+  color: #70434B;
+  font-size: 25px;
+  margin-bottom: 25px;
+}
+
+.calendar-date {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-top: 1px solid #D8C9B7;
+  border-bottom: 1px solid #D8C9B7;
+}
+
+.calendar-day {
+  color: #806044;
+  font-size: 13px;
+  letter-spacing: 3px;
+}
+
+.calendar-date strong {
+  color: #70434B;
+  font-size: 65px;
+  font-weight: normal;
+  line-height: 1.2;
+}
+
+.calendar-month {
+  color: #806044;
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+
+.calendar-message {
+  color: #8B7770;
+  font-size: 14px;
+  line-height: 1.7;
+  margin-bottom: 25px;
+}
+
+.calendar-submit {
+  width: 100%;
+  padding: 13px;
+  border: none;
+  border-radius: 7px;
+  background: #806044;
+  color: white;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+.calendar-close {
+  position: absolute;
+  top: 10px;
+  right: 16px;
+  background: none;
+  border: none;
+  color: #70434B;
+  font-size: 30px;
+  cursor: pointer;
+ 
+}
+
+
+
+/* COUNTDOWN - PAGE 1 */
+.canva-page {
+  position: relative;
+}
+
+.countdown-section {
+  position: absolute !important;
+  top: 72% !important;
+  left: 50% !important;
+  transform: translateX(-50%);
+  width: 55% !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  background: transparent !important;
+  z-index: 5;
+}
+
+.countdown-section h2 {
+  display: none;
+}
+
+.countdown {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3px;
+  width: 100%;
+  box-sizing: border-box;
+  background: rgba(255, 255, 255, 0.88);
+  padding: 10px 6px;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(80, 50, 40, 0.08);
+}
+
+
+.count-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  padding: 0;
+  border: none;
+}
+
+.count-box strong {
+  color: #A58665;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.count-box span {
+  color: #A58665;
+  font-size: 9px;
+  letter-spacing: 1.5px;
+  margin-top: 5px;
+}
+
+
+/* FIX COUNTDOWN TEXT OVERLAP */
+
+#countdown {
+  width: 55% !important;
+  left: 50% !important;
+  top: 73% !important;
+  transform: translateX(-50%) !important;
+  padding: 0 !important;
+  background: transparent !important;
+}
+
+#countdown .countdown {
+    display: grid !important;
+    grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+    gap: 10px !important;
+    width: 100% !important;
+    padding: 12px 12px 12px !important;
+    box-sizing: border-box !important;
+    background: rgba(255,255,255,0.92) !important;
+    border-radius: 16px !important;
+    align-items: center !important;
+}
+
+#countdown .count-box {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 90% !important;
+    min-height: 40px !important;
+    padding: 6px 5px 6px !important;
+    margin: 0 !important;
+    box-sizing: border-box !important;
+    background: rgba(101,8,31,0.85) !important;
+    border-radius: 15px !important;
+    text-align: center !important;
+}
+
+#countdown .count-box strong {
+  display: block !important;
+  position: static !important;
+  font-size: 45px !important;
+  line-height: 1.5 !important;
+  transform: translateY(3px) !important;
+  margin: 0 !important;
+  color: #f7efc2 !important;
+}
+
+#countdown .count-box span {
+  display: block !important;
+  position: static !important;
+  font-size: 15px !important;
+  line-height: 1.4 !important;
+  transform: translateY(20px) !important;
+  margin-top: 4px !important;
+  color: #f7efc2 !important;
+  letter-spacing: 1px !important;
+}
+
+#countdown .countdown-title {
+    grid-column: 1 / -1 !important;
+    text-align: center !important;
+    font-size: 25px !important;
+    font-weight: 600 !important;
+    letter-spacing: 3px !important;
+    margin-bottom: 8px !important;
+    text-transform: uppercase !important;
+}
+#countdown .countdown-title {
+    font-family: 'Cinzel', serif !important;
+    font-size: 23px !important;
+    font-weight: 600 !important;
+    letter-spacing: 4px !important;
+}
+
+/* PAPARAN UCAPAN PAGE 3 */
+#wishesDisplay {
+    position: absolute;
+    left: 9%;
+    top: 11%;
+    width: 78.5%;
+    height: 79.1%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2%;
+    overflow-y: auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+}
+
+/* NAMA PENGIRIM */
+.wish-entry strong {
+    color: #741C35;
+    font-family: Georgia, serif;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: normal;
+    border-left: none;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+/* KOTAK UCAPAN */
+.wish-entry p {
+    background: #FFF9EB;
+    color: #8B4050;
+    border-radius: 16px;
+    padding: 12px;
+    margin: 0;
+    font-family: Georgia, serif;
+    font-size: 14px;
+    line-height: 1.5;
+    overflow-wrap: anywhere;
+}
+
+.wishes-page {
+    position: relative;
+}
+
+.wishes-display {
+    position: absolute;
+    top: 12%;
+    left: 11%;
+    width: 78%;
+    display: flex;
+    flex-direction: column;
+    gap: 4.6%;
+    z-index: 2;
+}
+
+.wishes-display .wish-entry {
+    background: transparent;
+    border: none;
+    border-radius: 0;
+	transform: translateY(-10);
+    padding: 0;
+    margin: 0;
+    box-shadow: none;
+}
+
+.wishes-display .wish-entry strong {
+    display: block;
+    color: #741C35;
+    font: italic 18px Georgia, serif;
+    border-left: none;
+    padding-left: 0;
+    margin: 0 0 8px 0;
+}
+
+.wishes-display .wish-entry p {
+    background: transparent;
+    color: #8B4050;
+    border: none;
+    border-radius: 0;
+    padding: 0;
+    min-height: 0;
+    width: 100%;
+    margin: 0;
+    font-family: Georgia, serif;
+    font-size: 16px;
+    line-height: 1.5;
+    overflow-wrap: anywhere;
+}
+
+.wishes-display .wish-entry strong {
+    display: block;
+    border-left: 4px solid #650D2A;
+    padding-left: 12px;
+    margin: 0 0 10px 3px;
+}
+
+/* PAPARAN TELEFON */
+@media screen and (max-width: 600px) {
+
+  .wish-entry {
+    width: calc(100% - 30px);
+    max-width: none;
+    box-sizing: border-box;
+    margin: 15px auto;
+  }
+
+  .wish-entry p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+  .wishes-display {
+    top: 14%;
+    left: 11%;
+    width: 78%;
+    gap: 4.6%;
+  }
+
+  .wishes-display .wish-entry {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    gap: 6px;
+  }
+
+  .wishes-display .wish-entry strong {
+    font-size: 15px;
+  }
+
+  .wishes-display .wish-entry p {
+    font-size: 12px;
+    padding: 8px;
+  }
+}
+
+/* KEMAS SUSUNAN UCAPAN */
+.wishes-display .wish-entry strong {
+    border-left: none !important;
+    padding-left: 2 !important;
+    display: block;
+    font-size: 10px;
+	font-family: 'Cinzel',!important;
+    line-height: 2.2;
+	text-transform: capitalize;
+}
+
+.wishes-display .wish-entry p {
+    background: transparent !important;
+    border: none !important;
+    padding: 0 0 0 16px !important;
+    margin: 0 !important;
+    min-height: 0 !important;
+    line-height: 1.5;
+    font-size: 8px;
+	text-transform: capitalize;
+}
+
+/* SAMAKAN 4 KOTAK UCAPAN */
+#wishesDisplay {
+    display: grid !important;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 2% !important;
+    justify-content: stretch;
+    align-content: stretch;
+}
+
+#wishesDisplay .wish-entry {
+    width: 100% !important;
+    height: 100% !important;
+    min-height: 0 !important;
+    box-sizing: border-box;
+    margin: 0 !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+}
+
+/* KEMASKAN KEDUDUKAN UCAPAN */
+#wishesDisplay {
+    top: 12.5% !important;
+    height: 79.1% !important;
+    display: grid !important;
+    grid-template-rows: repeat(4, minmax(0, 1fr)) !important;
+    gap: 2% !important;
+}
+
+#wishesDisplay .wish-entry {
+    height: 100% !important;
+    min-height: 0 !important;
+    margin: 0 !important;
+    box-sizing: border-box !important;
+    overflow: hidden !important;
+}
+
+/* KAWAL TEKS UCAPAN PANJANG */
+#wishesDisplay .wish-entry p {
+    width: 100% !important;
+    max-height: 65px !important;
+    overflow-y: auto !important;
+    overflow-x: hidden !important;
+    overflow-wrap: anywhere !important;
+    word-break: normal !important;
+    box-sizing: border-box !important;
+    font-size: 8px !important;
+    line-height: 1.5 !important;
+    padding: 0 4px !important;
+}
+
+/* BETULKAN JARAK TEKS DARI GARIS KIRI */
+#wishesDisplay .wish-entry strong {
+    padding-left: 12px !important;
+}
+
+#wishesDisplay .wish-entry p {
+    padding: 8px 12px !important;
+    font-size: 10px !important;
+    line-height: 1.5 !important;
+    max-height: 65px !important;
+    overflow-y: auto !important;
+    box-sizing: border-box !important;
+}
+
+/* SUSUNAN AKHIR 4 KOTAK UCAPAN */
+#wishesDisplay {
+    display: grid !important;
+    grid-template-rows: repeat(4, 1fr) !important;
+    gap: 12px !important;
+    align-content: stretch !important;
+}
+
+#wishesDisplay .wish-entry {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: flex-start !important;
+    height: 100% !important;
+    min-height: 0 !important;
+    margin: 0 !important;
+    padding: 3px 24px 9px !important;
+    box-sizing: border-box !important;
+    overflow: hidden !important;
+}
+
+#wishesDisplay .wish-entry strong {
+    display: block !important;
+    margin: 0 0 5px 0 !important;
+    padding: 0 !important;
+    font-size: 10px !important;
+}
+
+#wishesDisplay .wish-entry p {
+    width: 100% !important;
+    max-height: 65px !important;
+    margin: 0 !important;
+    padding: 0 0 6px 0 !important;
+    font-size: 9px !important;
+    line-height: 1.5 !important;
+    overflow-y: auto !important;
+	transform: trannslateY(-5px);
+    box-sizing: border-box !important;
+}
+
+/* NAIKKAN TEKS UCAPAN SAHAJA */
+#wishesDisplay .wish-entry p {
+    transform: translateY(-8px) !important;
+}
+
+
+/* ==========================================
+   WISHES SYSTEM - FOUR RESPONSIVE CARDS
+   ========================================== */
+
+/* Kawasan paparan ucapan di atas panel Canva */
+.wishes-page {
+    position: relative;
+}
+
+#wishesDisplay,
+.wishes-display {
+    position: absolute !important;
+
+    /* Kedudukan dalam panel Canva */
+    top: 12.5% !important;
+    left: 11% !important;
+    width: 78% !important;
+    height: 79.1% !important;
+
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr) !important;
+    grid-auto-rows: calc((100% - 36px) / 4) !important;
+
+    gap: 12px !important;
+    align-content: start !important;
+
+    padding: 0 !important;
+    margin: 0 !important;
+
+    box-sizing: border-box !important;
+    overflow-x: hidden !important;
+    overflow-y: auto !important;
+
+    scrollbar-width: none !important;
+    -webkit-overflow-scrolling: touch;
+}
+
+#wishesDisplay::-webkit-scrollbar,
+.wishes-display::-webkit-scrollbar {
+    display: none !important;
+}
+
+/* Setiap kad ucapan */
+#wishesDisplay .wish-entry,
+.wishes-display .wish-entry {
+    width: 100% !important;
+    height: 100% !important;
+    min-height: 0 !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: flex-start !important;
+
+    box-sizing: border-box !important;
+    padding: 12px 15px !important;
+    margin: 0 !important;
+
+    background: rgba(255, 253, 248, 0.96) !important;
+    border: 1px solid #A58665 !important;
+    border-radius: 15px !important;
+
+    box-shadow: 0 3px 8px rgba(70, 35, 35, 0.12) !important;
+
+    overflow: hidden !important;
+}
+
+/* Nama pengirim */
+#wishesDisplay .wish-entry strong,
+.wishes-display .wish-entry strong {
+    display: block !important;
+
+    flex: 0 0 auto !important;
+    margin: 0 0 8px 0 !important;
+    padding: 0 !important;
+
+    color: #741C35 !important;
+    font-family: Georgia, serif !important;
+    font-size: clamp(11px, 3vw, 15px) !important;
+    font-style: italic !important;
+    font-weight: bold !important;
+    line-height: 1.4 !important;
+
+    overflow-wrap: anywhere !important;
+    transform: none !important;
+}
+
+/* Garisan pemisah nama dan ucapan */
+#wishesDisplay .wish-entry strong::after,
+.wishes-display .wish-entry strong::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: #D8C5B0;
+    margin-top: 7px;
+}
+
+/* Ucapan tetamu */
+#wishesDisplay .wish-entry p,
+.wishes-display .wish-entry p {
+    display: block !important;
+
+    flex: 1 1 auto !important;
+    min-height: 0 !important;
+    width: 100% !important;
+
+    margin: 0 !important;
+    padding: 0 3px 0 0 !important;
+
+    color: #806044 !important;
+    font-family: Georgia, serif !important;
+    font-size: clamp(9px, 2.5vw, 12px) !important;
+    line-height: 1.5 !important;
+
+    overflow-x: hidden !important;
+    overflow-y: auto !important;
+    overflow-wrap: anywhere !important;
+
+    box-sizing: border-box !important;
+    transform: none !important;
+}
+
+/* Telefon kecil */
+@media screen and (max-width: 380px) {
+    #wishesDisplay,
+    .wishes-display {
+        gap: 9px !important;
+        grid-auto-rows: calc((100% - 27px) / 4) !important;
+    }
+
+    #wishesDisplay .wish-entry,
+    .wishes-display .wish-entry {
+        padding: 9px 10px !important;
+        border-radius: 12px !important;
+    }
+
+    #wishesDisplay .wish-entry strong,
+    .wishes-display .wish-entry strong {
+        margin-bottom: 5px !important;
+    }
+}
+
+/* Telefon besar */
+@media screen and (min-width: 600px) {
+    #wishesDisplay .wish-entry,
+    .wishes-display .wish-entry {
+        padding: 14px 18px !important;
+    }
+}
+
+
+/* =====================================
+   UCAPAN & DOA - SAIZ SERAGAM
+===================================== */
+
+#wishesDisplay {
+    display: grid !important;
+
+    /* Semua kotak menggunakan satu saiz */
+    grid-template-columns: minmax(0, 1fr) !important;
+    grid-template-rows: none !important;
+    grid-auto-rows: clamp(110px, 15vh, 125px) !important;
+
+    gap: 12px !important;
+
+    width: 100% !important;
+    height: 79.1% !important;
+    min-height: 0 !important;
+
+    align-content: start !important;
+    justify-content: stretch !important;
+
+    overflow-x: hidden !important;
+    overflow-y: auto !important;
+    box-sizing: border-box !important;
+
+    padding-bottom: 5px !important;
+}
+
+/* SEMUA KOTAK UCAPAN */
+#wishesDisplay .wish-entry {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: flex-start !important;
+
+    width: 100% !important;
+    height: 100% !important;
+    min-height: 0 !important;
+    max-height: none !important;
+
+    margin: 0 !important;
+    padding: 10px 14px !important;
+
+    box-sizing: border-box !important;
+    overflow: hidden !important;
+}
+
+/* NAMA PENGIRIM */
+#wishesDisplay .wish-entry strong {
+    display: block !important;
+    flex: 0 0 auto !important;
+
+    margin: 0 0 8px 0 !important;
+    padding: 0 0 6px 0 !important;
+
+    font-size: clamp(11px, 3.2vw, 15px) !important;
+    line-height: 1.3 !important;
+
+    border-bottom: 1px solid rgba(116,65,53,0.25) !important;
+}
+
+/* UCAPAN */
+#wishesDisplay .wish-entry p {
+    display: block !important;
+    flex: 1 1 auto !important;
+
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    max-height: none !important;
+
+    margin: 0 !important;
+    padding: 3px 2px !important;
+
+    font-size: clamp(9px, 2.7vw, 13px) !important;
+    line-height: 1.5 !important;
+
+    overflow-x: hidden !important;
+    overflow-y: auto !important;
+    overflow-wrap: anywhere !important;
+
+    box-sizing: border-box !important;
+}
+
+/* LARASKAN LEBAR KOTAK UCAPAN */
+#wishesDisplay,
+.wishes-display {
+    left: 11% !important;
+    width: 77% !important;
+    box-sizing: border-box !important;
+}
+
+/* Pastikan setiap kotak ikut lebar paparan */
+#wishesDisplay .wish-entry,
+.wishes-display .wish-entry {
+    width: 100% !important;
+    min-width: 0 !important;
+    box-sizing: border-box !important;
+}
+
+/* GARIS VERTICAL KOTAK UCAPAN */
+#wishesDisplay .wish-entry,
+.wishes-display .wish-entry {
+    position: relative !important;
+    padding-left: 30px !important;
+}
+
+/* Garis vertical burgundy */
+#wishesDisplay .wish-entry::before,
+.wishes-display .wish-entry::before {
+    content: "";
+    position: absolute;
+    left: 13px;
+    top: 16px;
+    bottom: 16px;
+    width: 3px;
+    background-color: #65081F;
+    border-radius: 3px;
+}
+
+/* Buang garis horizontal pada nama */
+#wishesDisplay .wish-entry strong,
+.wishes-display .wish-entry strong {
+    border: none !important;
+    border-bottom: none !important;
+    text-decoration: none !important;
+}
+
+/* LOCATION POPUP */
+.location-popup {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 10000;
+    background: rgba(20, 15, 15, 0.65);
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.location-popup.active {
+    display: flex;
+}
+
+.location-card {
+    position: relative;
+    width: 100%;
+    max-width: 380px;
+    background: #F5F0E7;
+    border: 1px solid #A58665;
+    border-radius: 18px;
+    padding: 35px 25px;
+    box-sizing: border-box;
+    text-align: center;
+    box-shadow: 0 12px 40px rgba(0,0,0,0.25);
+}
+
+.location-close {
+    position: absolute;
+    top: 8px;
+    right: 15px;
+    background: none;
+    border: none;
+    color: #65081F;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.location-pin {
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.location-content h2 {
+    color: #65081F;
+    font-family: 'Cinzel', serif;
+    font-size: 23px;
+    letter-spacing: 2px;
+    margin: 5px 0;
+}
+
+.location-subtitle {
+    color: #806044;
+    font-size: 11px;
+    letter-spacing: 2px;
+    margin: 5px 0 18px;
+}
+
+.location-divider {
+    height: 1px;
+    background: #A58665;
+    margin: 15px 0 22px;
+}
+
+.location-content h3 {
+    color: #65081F;
+    font-family: Georgia, serif;
+    font-size: 19px;
+    line-height: 1.5;
+    margin-bottom: 12px;
+}
+
+.location-address {
+    color: #806044;
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+.location-link {
+    display: block;
+    width: 100%;
+    padding: 14px 10px;
+    margin-top: 12px;
+    background: #65081F;
+    color: #FFFFFF;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 13px;
+    letter-spacing: 1px;
+    box-sizing: border-box;
+}
+
+.waze-link {
+    background: #A58665;
+}
+
+.location-link:active {
+    opacity: 0.8;
+}
+
+.cover {
+    position: fixed;
+}
+
+.open-button {
+    position: absolute;
+    top: 72%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    background: linear-gradient(10deg, #87384D, #A8586D, #65081F);
+    color: #65081f;
+
+    border: 2px solid transparent !important;
+
+background:
+     linear-gradient(110deg, #f8e49a, #f1e7aa, #fff2c4) padding-box,
+    linear-gradient(110deg, #7a4747, #69001d, #65081f ) border-box !important;
+
+box-shadow: 0 5px 10px rgba(40, 0, 10, 0.15) !important;
+
+border-radius: 35px;
+
+    padding: 11px 25px;
+    min-width: 175px;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    white-space: nowrap;
+
+
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.open-button:hover {
+    background: #7A102D;
+    transform: translateX(-50%);
+}
+
+.open-button:active {
+    transform: translateX(-50%);
+    box-shadow: 0 2px 5px rgba(40, 0, 10, 0.25);
+}
+
+/* COUNTDOWN - FINAL SIZE ADJUSTMENT */
+
+.countdown-section {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    padding: 18px 10px 22px !important;
+    margin: 0 auto !important;
+}
+
+.countdown-title {
+    margin-bottom: 12px !important;
+    font-size: 25px !important;
+}
+
+/* FOUR WIDE BOXES */
+.countdown {
+    display: grid !important;
+    grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+    gap: 5px !important;
+
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+}
+
+/* SHORTER AND WIDER BOXES */
+.count-box {
+    width: 100% !important;
+    max-width: none !important;
+    min-width: 0 !important;
+
+    height: 68px !important;
+    min-height: 68px !important;
+
+    padding: 7px 2px !important;
+    box-sizing: border-box !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 5px !important;
+
+    background: #792B40 !important;
+    border: 1px solid #B99A68 !important;
+    border-radius: 12px !important;
+}
+
+/* BIG GOLD NUMBERS */
+.count-box strong {
+    font-size: 34px !important;
+    line-height: 1 !important;
+}
+
+/* LABEL */
+.count-box span {
+    font-size: 9px !important;
+    letter-spacing: 0.8px !important;
+    white-space: nowrap !important;
+}
+
+</style>
+
+<style>
+/* COUNTDOWN - FORCE FINAL LAYOUT */
+
+#countdown {
+    width: 100% !important;
+    box-sizing: border-box !important;
+    padding: 22px 35px 22px !important;
+}
+
+#countdown .countdown-title {
+    font-family: "Cormorant Garamond", Georgia, serif !important;
+    font-size: 17px !important;
+	font-weight: 600 !important
+    margin: 14px 0 14px !important;
+    color: #a5864d !important;
+    letter-spacing: 5px !important;
+	text-shadow: 0px 1px 1px rgba(101, 8, 31, 0.12);
+}
+
+#countdown .countdown {
+    display: grid !important;
+    grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+    width: 100% !important;
+    gap: 5px !important;
+	height: 68px !important;
+	transform: translateY(48px) !important;
+    box-sizing: border-box !important;
+	background: rgba(255,255,255,0.94) !important;
+border-radius: 18px !important;
+box-shadow: 2px 9px 14px rgba(50, 8, 31, 0.30) !important;
+}
+
+#countdown .count-box {
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: none !important;
+    height: 40px !important;
+    min-height: 0 !important;
+    padding: 4px 5px !important;
+	transform: translateY(-3px) !important;
+    box-sizing: border-box !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 7px !important;
+
+    background: linear-gradient(145deg, #87384D, #65081F) !important;
+    border: 1.5px solid #C5A66D !important;
+    border-radius: 13px !important;
+    box-shadow: 0 4px 9px rgba(50,0,15,.18) !important;
+}
+
+#countdown .count-box strong {
+    font-family: 'Cormorant Garamond', serif !important;
+    font-size: 22px !important;
+    line-height: 1 !important;
+    font-weight: 700 !important;
+
+    background: linear-gradient(
+        180deg,
+        #FFF9E8,
+        #F5E2B4,
+        #D8B76E,
+        #FFF3D0
+    ) !important;
+
+    -webkit-background-clip: text !important;
+    background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+}
+
+#countdown .count-box span {
+    font-size: 9px !important;
+    color: #FFF8EA !important;
+	transform: translateY(-6px) !important;
+    white-space: nowrap !important;
+    letter-spacing: 1px !important;
+}
+
+/* FORCE SHOW NAVIGATION LABELS */
+
+.bottom-nav .nav-button .nav-label {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    color: #65081F !important;
+    font-size: 12px !important;
+	transform: translateY(-8px);
+    font-weight: 700 !important;
+    letter-spacing: 0.8px !important;
+    line-height: 1.2 !important;
+    height: auto !important;
+    margin-top: 0px !important;
+}
+
+.bottom-nav {
+    position: fixed !important;
+    z-index: 500;
+
+    bottom: calc(22px + env(safe-area-inset-bottom)) !important;
+    left: 40% !important;
+    transform: translateX(-50%) !important;
+
+    width: calc(100% - 24px) !important;
+    max-width: 500px;
+
+    height: 60px !important;
+    min-height: 60px !important;
+
+    padding: 3px 8px !important;
+    box-sizing: border-box;
+
+    background: linear-gradient(
+        140deg,
+        #f8e49a,
+        #f1e7aa,
+        #fff2c4
+    ) !important;
+
+    border: 1px solid #D4AF72 !important;
+    border-radius: 18px !important;
+
+    box-shadow:
+        0 5px 18px rgba(40, 0, 10, 0.25),
+        0 2px 6px rgba(212, 175, 114, 0.35) !important;
+}
+
+.bottom-nav .nav-button {
+    min-height: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+}
+
+.bottom-nav .nav-icon img {
+    width: 40px !important;
+    height: 40px !important;
+    object-fit: contain !important;
+    transform: translateY (-5px) !important;
+    display: block !important;
+}
+
+.bottom-nav .nav-label {
+    display: block !important;
+    color: #65081F !important;
+	font-family: "Montserrat", sans-serif !important;
+    font-size: 9px !important;
+    font-weight: 600 !important;
+    line-height: 12px !important;
+	margin-top: 0 !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+/* FOOTER - CENTERED WEDDING DESIGN */
+
+/* FOOTER - HORIZONTAL DESIGN */
+
+.wedding-footer {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px 15px;
+
+    background: linear-gradient(
+        135deg,
+        #F4E8D2,
+        #EAD9BB,
+        #F4E8D2
+    );
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-main {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.footer-initial {
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.footer-credit {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #65081F;
+    text-align: left;
+    margin: 0;
+}
+
+/* Buang ruang kosong antara gambar terakhir dan footer */
+.canva-page {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.canva-page img {
+  display: block;
+  margin-bottom: 0 !important;
+}
+
+.wedding-footer {
+  margin-top: 0 !important;
+}
+
+/* FINAL NAVIGATION POSITION */
+.bottom-nav {
+    position: fixed !important;
+    bottom: 35px !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+}
+
+/* FINAL OPEN BUTTON ANIMATION */
+
+.open-button {
+    animation: weddingButtonPulse 1.5s ease-in-out infinite !important;
+    outline: 0 solid rgba(197, 166, 109, 0);
+}
+
+@keyframes weddingButtonPulse {
+    0%, 100% {
+        outline: 0 solid rgba(197, 166, 109, 0);
+        outline-offset: 0;
+    }
+
+    50% {
+        outline: 3px solid rgba(197, 166, 109, 0.9);
+        outline-offset: 8px;
+    }
+}
+
+
+/* PAGE REVEAL ANIMATION */
+
+@keyframes pageReveal {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+#mainContent > .canva-page {
+    animation: pageReveal 1.4s ease both;
+}
+
+#mainContent > .canva-page:nth-of-type(1) {
+    animation-delay: 0.15s;
+}
+
+#mainContent > .canva-page:nth-of-type(2) {
+    animation-delay: 0.35s;
+}
+
+#mainContent > .canva-page:nth-of-type(3) {
+    animation-delay: 0.55s;
+}
+
+
+/* COUNTDOWN GOLD NUMBER GLOW */
+
+#countdown .count-box strong {
+    animation: countdownGoldGlow 2.2s ease-in-out infinite;
+}
+
+@keyframes countdownGoldGlow {
+    0%, 100% {
+        filter: brightness(1);
+    }
+
+    50% {
+        filter: brightness(1.6);
+    }
+}
+
+
+/* WEDDING WISHES REVEAL */
+
+#wishesDisplay .wish-entry {
+    animation: wishReveal 0.9s ease both;
+}
+
+#wishesDisplay .wish-entry:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+#wishesDisplay .wish-entry:nth-child(2) {
+    animation-delay: 0.25s;
+}
+
+#wishesDisplay .wish-entry:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+#wishesDisplay .wish-entry:nth-child(4) {
+    animation-delay: 0.55s;
+}
+
+@keyframes wishReveal {
+    from {
+        opacity: 0;
+        filter: blur(4px);
+    }
+
+    to {
+        opacity: 1;
+        filter: blur(0);
+    }
+}
+
+
+/* FLOATING MUSIC BUTTON ANIMATION */
+
+.music-button {
+    animation: musicPulse 2s ease-in-out infinite;
+}
+
+@keyframes musicPulse {
+    0%, 100% {
+        outline: 0 solid rgba(197, 166, 109, 0);
+        outline-offset: 0;
+    }
+
+    50% {
+        outline: 3px solid rgba(197, 166, 109, 0.65);
+        outline-offset: 5px;
+    }
+	
+/* BOTTOM NAVIGATION TAP EFFECT */
+
+.bottom-nav .nav-button {
+    transition: transform 0.18s ease,
+                background 0.2s ease,
+                opacity 0.2s ease !important;
+}
+
+.bottom-nav .nav-button:active {
+    transform: scale(0.90);
+    background: rgba(101, 8, 31, 0.12);
+    opacity: 0.8;
+}
+
+.bottom-nav .nav-button:hover {
+    background: rgba(197, 166, 109, 0.22);
+}
+
+
+/* GOLD PARTICLES - VISIBLE MOVEMENT */
+
+@keyframes goldDriftTest {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(-100px);
+    }
+}
+
+
+</style>
+
+
+</head>
+
+<body>
+
+<div class="gold-particles" style="
+position:fixed;
+top:0;
+left:0;
+width:100vw;
+height:100vh;
+z-index:99999;
+pointer-events:none;
+background-image:
+radial-gradient(circle, #F9D77A 2px, transparent 3px),
+radial-gradient(circle, #FFF0BD 1.5px, transparent 2.5px),
+radial-gradient(circle, #D6A84D 2px, transparent 3px);
+background-size:100px 130px, 140px 180px, 180px 150px;
+"></div>
+
+
+<script>
+const goldParticles = document.querySelector('.gold-particles');
+
+if (goldParticles) {
+    goldParticles.animate(
+        [
+            { transform: 'translateY(0)' },
+            { transform: 'translateY(-100px)' }
+        ],
+        {
+            duration: 3000,
+            iterations: Infinity,
+            direction: 'alternate',
+            easing: 'ease-in-out'
+        }
+    );
+}
+</script>
+
+
+<!-- =================================
+     OPENING COVER
+================================= -->
+
+<section class="cover" id="cover">
+
+  <img src="images/cover.png"
+       class="cover-image"
+       alt="Humaira dan Haziq">
+
+  <button class="open-button"
+          onclick="openInvitation()">
+    BUKA JEMPUTAN
+  </button>
+
+</section>
+
+
+<!-- =================================
+     MUSIC
+================================= -->
+
+<audio id="music"
+       src="music/music.mp3"
+       loop
+       preload="auto">
+</audio>
+
+
+<!-- =================================
+     MAIN WEBSITE
+================================= -->
+
+<main id="mainContent">
+
+  <!-- CANVA PAGE 1 -->
+  <section class="canva-page">
+    <img src="images/page1.png"
+         alt="Wedding Invitation Page 1">
+		 
+  </section>
+
+  <!-- CANVA PAGE 2 -->
+  <section class="canva-page">
+    <img src="images/page2.png"
+         alt="Wedding Invitation Page 2">
+		 <section class="countdown-section" id="countdown">
+
+    <div class="countdown">
+	
+	<div class="countdown-title">Countdown</div>
+
+      <div class="count-box">
+        <strong id="days">00</strong>
+        <span>HARI</span>
+      </div>
+
+      <div class="count-box">
+        <strong id="hours">00</strong>
+        <span>JAM</span>
+      </div>
+
+      <div class="count-box">
+        <strong id="minutes">00</strong>
+        <span>MINIT</span>
+      </div>
+
+      <div class="count-box">
+        <strong id="seconds">00</strong>
+        <span>SAAT</span>
+      </div>
+
+    </div>
+</section>
+
+  </section>
+
+  <!-- CANVA PAGE 3 -->
+<section class="canva-page wishes-page">
+    <img src="Images/page3.png" alt="Wedding Wishes Page 3">
+    <div id="wishesDisplay" class="wishes-display"></div>
+</section>
+
+<!-- FOOTER -->
+<footer class="wedding-footer">
+
+  <div class="footer-main">
+
+    <img src="Images/initial.png"
+         alt="Initial"
+         class="footer-initial">
+
+    <div class="footer-credit">
+      DEVELOPED BY Hzyq WITH LOVE ♡
+    </div>
+
+  </div>
+
+</footer>
+
+</main>
+
+
+<!-- =================================
+     FLOATING MUSIC
+================================= -->
+
+<button class="music-button"
+        id="musicButton"
+        onclick="toggleMusic()"
+        aria-label="Play or pause music">
+
+  <img id="musicIcon"
+       src="Images/play.png"
+       alt="Music">
+
+</button>
+
+
+<!-- =================================
+     FIXED NAVIGATION
+================================= -->
+
+<nav class="bottom-nav">
+
+    <button class="nav-button" onclick="openContactPopup()">
+        <span class="nav-icon">
+            <img src="Images/contact.png" alt="Contact">
+        </span>
+        <span class="nav-label">Hubungi</span>
+    </button>
+
+    <button class="nav-button" onclick="openLocationPopup()">
+        <span class="nav-icon">
+            <img src="Images/location.png" alt="Location">
+        </span>
+        <span class="nav-label">Lokasi</span>
+    </button>
+
+    <button class="nav-button" onclick="openWishPopup()">
+        <span class="nav-icon">
+            <img src="Images/wish.png" alt="Wish">
+        </span>
+        <span class="nav-label">Ucapan</span>
+    </button>
+
+    <button class="nav-button"
+        onclick="document.getElementById('calendarPopup').classList.add('active')">
+        <span class="nav-icon">
+            <img src="Images/calendar.png" alt="Calendar">
+        </span>
+        <span class="nav-label">Kalendar</span>
+    </button>
+
+</nav>
+
+
+<!-- CONTACT POPUP -->
+<div id="contactPopup" class="contact-popup">
+    <div class="contact-card">
+
+        <button class="contact-close"
+                onclick="closeContactPopup()">×</button>
+
+        <h2>Hubungi</h2>
+        <p class="contact-subtitle">Hubungi keluarga kami</p>
+
+        <div class="contact-person">
+            <span>Athirah</span>
+            <a href="tel:60123456789">013-3446875</a>
+        </div>
+
+        <div class="contact-person">
+            <span>Aizat</span>
+            <a href="tel:60123456789">013-2258908</a>
+        </div>
+
+        <div class="contact-person">
+            <span>Faiz</span>
+            <a href="tel:60123456789">010-9330249</a>
+        </div>
+
+    </div>
+</div>
+
+
+<!-- WISH POPUP -->
+<div id="wishPopup" class="wish-popup">
+  <div class="wish-card">
+
+    <button class="wish-close" onclick="closeWishPopup()">×</button>
+
+    <h2>HANTARKAN UCAPAN ANDA</h2>
+    <p class="wish-subtitle">Titipkan ucapan & doa buat kami</p>
+
+    <form id="wishForm">
+      <input
+        type="text"
+        id="guestName"
+        placeholder="Nama anda"
+        required
+      >
+
+      <textarea
+        id="guestWish"
+        placeholder="Tulis ucapan anda..."
+        rows="4"
+        required
+      ></textarea>
+
+      <button type="submit" class="wish-submit">
+        Hantar
+      </button>
+    </form>
+
+    <div id="wishList"></div>
+
+  </div>
+</div>
+
+<!-- CALENDAR POPUP -->
+<div id="calendarPopup" class="calendar-popup">
+  <div class="calendar-card">
+
+   <button class="calendar-close"
+onclick="document.getElementById('calendarPopup').classList.remove('active')">×</button>
+
+    <p class="calendar-subtitle">SAVE THE DATE</p>
+    <h2>Our Special Day</h2>
+
+    <div class="calendar-date">
+      <span class="calendar-day">Khamis</span>
+      <strong>31</strong>
+      <span class="calendar-month">DISEMBER 2026</span>
+    </div>
+
+    <p class="calendar-message">
+      Kami menjemput anda untuk meraikan hari istimewa kami.
+    </p>
+
+    <button class="calendar-submit" onclick="addCalendar()">
+      ADD TO CALENDAR
+    </button>
+
+  </div>
+</div
+
+<!-- LOCATION POPUP -->
+<div id="locationPopup" class="location-popup"
+     onclick="closeLocationPopup()">
+
+  <div class="location-card" onclick="event.stopPropagation()">
+
+    <button class="location-close"
+            onclick="closeLocationPopup()">×</button>
+
+    <div class="location-content">
+
+      <div class="location-pin">📍</div>
+
+      <h2>LOKASI MAJLIS</h2>
+      <p class="location-subtitle">MAJLIS PERKAHWINAN</p>
+
+      <div class="location-divider"></div>
+
+      <h3>Dewan Bunga Raya<br>Pantai Sri Tujuh</h3>
+
+      <p class="location-address">
+        Jalan Pantai Tujuh,<br>
+        16200 Tumpat,<br>
+        Kelantan.
+      </p>
+
+      <a class="location-link"
+         href="https://maps.app.goo.gl/pcVrSjwv53Fkh1GQA"
+         target="_blank" rel="noopener">
+        📍 GOOGLE MAPS
+      </a>
+
+      <a class="location-link waze-link"
+         href="https://waze.com/ul?q=Dewan%20Bunga%20Raya%20Pantai%20Sri%20Tujuh%2C%20Tumpat%2C%20Kelantan&navigate=yes"
+         target="_blank" rel="noopener">
+        🚗 BUKA WAZE
+      </a>
+
+    </div>
+  </div>
+</div>
+
+<script>
+
+/* =================================
+   WEDDING INFORMATION
+================================= */
+
+const wedding = {
+
+  title: "Wedding Humaira & Haziq",
+
+  date: "2026-12-31",
+
+  start: "11:00",
+
+  end: "16:30",
+
+  address: "ALAMAT PENUH DEWAN",
+
+  map: "https://maps.google.com/?q=LOKASI+DEWAN",
+
+  phone: "60123456789"
+
+};
+
+
+/* =================================
+   OPEN INVITATION + AUTOPLAY
+================================= */
+
+let invitationOpened = false;
+
+function openInvitation() {
+
+  if (invitationOpened) return;
+
+  invitationOpened = true;
+  document.body.classList.add("interface-active");
+  
+
+  const music = document.getElementById("music");
+
+  music.play().then(() => {
+
+    updateMusicButton();
+
+  }).catch(error => {
+
+    console.log("Music playback unavailable", error);
+
+  });
+
+  document.getElementById("cover")
+    .classList.add("hide");
+
+  document.getElementById("mainContent")
+    .style.display = "block";
+
+  setTimeout(() => {
+
+    document.getElementById("cover").style.display = "none";
+
+    startAutoScroll();
+
+  }, 900);
+
+}
+
+
+/* =================================
+   MUSIC PLAY / PAUSE
+================================= */
+
+function toggleMusic() {
+
+  const music = document.getElementById("music");
+
+  if (music.paused) {
+
+    music.play().then(() => {
+    updateMusicButton();
+}).catch(error => console.log(error));
+
+  } else {
+
+    music.pause();
+
+    updateMusicButton();
+
+  }
+
+}
+
+function updateMusicButton() {
+
+  const music = document.getElementById("music");
+
+  const button = document.getElementById("musicButton");
+
+  const icon = document.getElementById("musicIcon");
+
+  if (music.paused) {
+
+    icon.src = "Images/play.png";
+
+    button.classList.remove("playing");
+
+  } else {
+
+    icon.src = "Images/pause.png";
+
+    button.classList.add("playing");
+
+  }
+
+}
+
+
+/* =================================
+   AUTO SCROLL
+================================= */
+
+let autoScrollActive = false;
+let lastFrame = 0;
+let animationFrame = null;
+let pauseUntil = 0;
+
+const scrollSpeed = 35;
+
+function startAutoScroll() {
+
+  autoScrollActive = true;
+
+  lastFrame = 0;
+
+  animationFrame =
+    requestAnimationFrame(autoScroll);
+
+}
+
+function autoScroll(timestamp) {
+
+  if (!autoScrollActive) return;
+
+  const elapsed = lastFrame
+    ? Math.min((timestamp - lastFrame) / 1000, 0.05)
+    : 0;
+
+lastFrame = timestamp;
+
+  if (Date.now() >= pauseUntil) {
+
+    const bottom =
+      window.scrollY + window.innerHeight >=
+      document.documentElement.scrollHeight - 3;
+
+    if (!bottom) {
+
+      window.scrollBy(
+        0,
+        scrollSpeed * elapsed
+      );
+
+    } else {
+
+      autoScrollActive = false;
+
+      return;
+
+    }
+
+  }
+
+  animationFrame =
+    requestAnimationFrame(autoScroll);
+
+}
+
+
+/* Pause while user interacts with screen */
+
+function pauseAutoScroll() {
+
+  if (!invitationOpened) return;
+
+  pauseUntil = Date.now() + 1000;
+
+}
+
+window.addEventListener("touchstart", pauseAutoScroll, {
+  passive: true
+});
+
+window.addEventListener("touchmove", pauseAutoScroll, {
+  passive: true
+});
+
+window.addEventListener("wheel", pauseAutoScroll, {
+  passive: true
+});
+
+window.addEventListener("pointerdown", pauseAutoScroll, {
+  passive: true
+});
+
+
+/* =================================
+   COUNTDOWN
+================================= */
+
+const targetDate = new Date(
+  wedding.date + "T" + wedding.start + ":00+08:00"
+).getTime();
+
+function updateCountdown() {
+
+  const now = Date.now();
+
+  const distance = targetDate - now;
+
+  if (distance <= 0) {
+
+    ["days", "hours", "minutes", "seconds"]
+      .forEach(id => {
+        document.getElementById(id).textContent = "00";
+      });
+
+    return;
+
+  }
+
+  document.getElementById("days").textContent =
+    Math.floor(distance / 86400000);
+
+  document.getElementById("hours").textContent =
+    Math.floor((distance % 86400000) / 3600000);
+
+  document.getElementById("minutes").textContent =
+    Math.floor((distance % 3600000) / 60000);
+
+  document.getElementById("seconds").textContent =
+    Math.floor((distance % 60000) / 1000);
+
+}
+
+function startCountdown() {
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
+}
+
+if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", startCountdown);
+} else {
+    startCountdown();
+}
+
+
+/* =================================
+   CALENDAR
+================================= */
+
+function addCalendar() {
+
+  const start =
+    wedding.date.replaceAll("-", "") +
+    "T" + wedding.start.replace(":", "") + "00";
+
+  const end =
+    wedding.date.replaceAll("-", "") +
+    "T" + wedding.end.replace(":", "") + "00";
+
+  const url =
+    "https://calendar.google.com/calendar/render?action=TEMPLATE" +
+    "&text=" + encodeURIComponent(wedding.title) +
+    "&dates=" + start + "/" + end +
+    "&location=" + encodeURIComponent(wedding.address);
+
+  window.open(url, "_blank");
+
+}
+
+
+/* =================================
+   NAVIGATION ACTIONS
+================================= */
+
+function goToCountdown() {
+
+  document.getElementById("countdown")
+    .scrollIntoView({
+      behavior: "smooth"
+    });
+
+  pauseAutoScroll();
+
+}
+
+function goToWish() {
+
+  alert("Bahagian Wedding Wishes akan kita bina dalam fasa seterusnya.");
+
+  pauseAutoScroll();
+
+}
+
+
+function openContactPopup() {
+    document.getElementById("contactPopup")
+        .classList.add("active");
+}
+
+function closeContactPopup() {
+    document.getElementById("contactPopup")
+        .classList.remove("active");
+}
+
+function openWishPopup() {
+  document.getElementById("wishPopup").classList.add("active");
+}
+
+function closeWishPopup() {
+  document.getElementById("wishPopup").classList.remove("active");
+}
+
+function openCalendarPopup() {
+  document.getElementById("calendarPopup").classList.add("active");
+}
+
+function closeCalendarPopup() {
+  document.getElementById("calendarPopup").classList.remove("active");
+}
+
+window.openCalendarPopup = function() {
+  const popup = document.getElementById("calendarPopup");
+
+  if (popup) {
+    popup.classList.add("active");
+  }
+};
+
+window.closeCalendarPopup = function() {
+  const popup = document.getElementById("calendarPopup");
+
+  if (popup) {
+    popup.classList.remove("active");
+  }
+};
+
+</script>
+
+
+<script>
+window.openCalendarPopup = function() {
+  document.getElementById("calendarPopup").classList.add("active");
+};
+
+window.closeCalendarPopup = function() {
+  document.getElementById("calendarPopup").classList.remove("active");
+};
+</script>
+
+<script>
+window.openCalendarPopup = function() {
+  document.getElementById("calendarPopup").classList.add("active");
+};
+
+window.closeCalendarPopup = function() {
+  document.getElementById("calendarPopup").classList.remove("active");
+};
+
+
+const WISH_DATABASE_URL = "https://script.google.com/macros/s/AKfycbzE4XzhGfEUrOHGhG9DQonvX6plmR0BLTLnIAXg-30iz0sI6dp8yV4HbBN9gGv2oBQP/exec";
+
+document.getElementById("wishForm").addEventListener("submit", async function(e) {
+  e.preventDefault();
+
+  const name = document.getElementById("guestName").value.trim();
+  const wish = document.getElementById("guestWish").value.trim();
+  const submitButton = this.querySelector('button[type="submit"]');
+
+  if (!name || !wish) {
+    alert("Sila isi nama dan ucapan anda.");
+    return;
+  }
+  
+  // HAD PERKATAAN
+const nameWords = name.split(/\s+/).filter(Boolean);
+const wishWords = wish.split(/\s+/).filter(Boolean);
+
+if (nameWords.length > 6) {
+  alert("Nama maksimum 6 patah perkataan sahaja.");
+  return;
+}
+
+if (wishWords.length > 30) {
+  alert("Ucapan maksimum 30 patah perkataan sahaja.");
+  return;
+}
+
+  submitButton.disabled = true;
+  submitButton.textContent = "Menghantar...";
+
+  try {
+    await fetch(WISH_DATABASE_URL, {
+      method: "POST",
+      mode: "no-cors",
+      headers: {
+        "Content-Type": "text/plain;charset=utf-8"
+      },
+      body: JSON.stringify({
+        name: name,
+        wish: wish
+      })
+    });
+
+    alert("Ucapan anda telah dihantar. Terima kasih!");
+    this.reset();
+
+  } catch (error) {
+    alert("Ucapan tidak berjaya dihantar. Sila cuba lagi.");
+    console.error(error);
+
+  } finally {
+    submitButton.disabled = false;
+    submitButton.textContent = "Hantar";
+  }
+});
+
+
+function displayWishes(wishes) {
+    const container = document.getElementById("wishesDisplay");
+
+    if (!container) return;
+
+    container.innerHTML = "";
+
+    if (!wishes || wishes.length === 0) {
+        container.innerHTML =
+            '<div class="wish-entry"><strong>Ucapan & Doa</strong><p>Belum ada ucapan daripada tetamu.</p></div>';
+        return;
+    }
+
+    wishes.forEach(item => {
+        const card = document.createElement("div");
+        card.className = "wish-entry";
+
+        const name = document.createElement("strong");
+        name.textContent = item.name || "Tetamu";
+
+        const message = document.createElement("p");
+        message.textContent = item.wish || "";
+
+        card.appendChild(name);
+        card.appendChild(message);
+
+        container.appendChild(card);
+    });
+
+    /* Mulakan paparan dari ucapan pertama */
+    container.scrollTop = 0;
+}
+
+function loadWishes() {
+  const script = document.createElement("script");
+
+  script.src = WISH_DATABASE_URL +
+    "?callback=displayWishes&t=" + Date.now();
+
+  document.body.appendChild(script);
+}
+
+window.addEventListener("load", loadWishes);
+
+/* LOCATION POPUP FUNCTION */
+
+function openLocationPopup() {
+    document.getElementById("locationPopup")
+        .classList.add("active");
+}
+
+function closeLocationPopup() {
+    document.getElementById("locationPopup")
+        .classList.remove("active");
+}
+
+</script>
+
+</body>
+</html>
